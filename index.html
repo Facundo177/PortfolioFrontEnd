@@ -1,12 +1,1672 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD"
+      crossorigin="anonymous"
+    />
+
+    <script
+      src="https://kit.fontawesome.com/d0874270ae.js"
+      crossorigin="anonymous"
+    ></script>
+
+    <link rel="stylesheet" href="assets/css/styles.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
     
-</body>
+
+ <nav class="navbar navbar-expand-lg bg-body-tertiary bg-dark fixed-top" data-bs-theme="dark">
+  <div class="container-fluid">
+    <a
+            class="navbar-brand"
+            href="https://argentinaprograma.inti.gob.ar"
+            target="_blank"
+            ><img
+              class="logoArg"
+              src="assets/img/LogoArgProg.png"
+              alt="Argentina-Programa"
+              width="100%"
+          /></a>
+
+
+
+
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">#YoProgramo</a>
+        </li>
+        
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Secciones
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#acerca">Acerca de...</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#experiencia">Experiencia</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#educacion">Educación</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#skills">Hard & Soft Skills</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#proyectos">Proyectos</a></li>
+            
+          </ul>
+        </li>
+      </ul>
+
+
+
+      <ul class="list-group list-group-horizontal me-2">
+        <li class="list-group-item">
+          <a href="https://github.com/Facundo177" target="_blank"
+            ><i
+              class="fa-brands fa-square-github fa-beat-fade fa-lg"
+              style="
+                --fa-beat-fade-opacity: 0.67;
+                --fa-beat-fade-scale: 1.2;
+                color: white;
+              "
+            ></i
+          ></a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://linkedin.com/in/facundo-gaitán-segura-16bb75264/" target="_blank"
+            ><i
+              class="fa-brands fa-linkedin fa-beat-fade fa-lg"
+              style="
+                --fa-beat-fade-opacity: 0.67;
+                --fa-beat-fade-scale: 1.2;
+                color: white;
+              "
+            ></i
+          ></a>
+        </li>
+        <li class="list-group-item">
+          <a href="https://codepen.io/Facundo177" target="_blank"
+            ><i
+              class="fa-brands fa-codepen fa-beat-fade fa-lg"
+              style="
+                --fa-beat-fade-opacity: 0.67;
+                --fa-beat-fade-scale: 1.2;
+                color: white;
+              "
+            ></i
+          ></a>
+        </li>
+      </ul>
+
+
+
+
+
+      <!-- Button trigger modal -->
+      <button type="button" class="btn btn-light my-2" data-bs-toggle="modal" data-bs-target="#loginModal">
+        <b>Login</b> 
+      </button>
+
+      <button type="button" class="btn btn-light m-2" data-bs-toggle="modal" data-bs-target="#logoutModal">
+        <b>Logout</b> 
+      </button>
+    </div>
+  </div>
+</nav>
+    
+
+
+ 
+
+
+
+
+
+
+
+
+
+  <!-- <div id="carouselExampleCaptions" class="carousel slide">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="assets/img/ejemplo.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>First slide label</h5>
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur beatae dolorem pariatur tempore temporibus! Consequatur, maiores ullam eligendi, aspernatur deserunt necessitatibus magnam a officiis modi temporibus molestiae possimus laudantium id.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/964782.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Second slide label</h5>
+          <p>Some representative placeholder content for the second slide.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="assets/img/3025778.jpg" class="d-block w-100" alt="...">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Third slide label</h5>
+          <p>Some representative placeholder content for the third slide.</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Next</span>
+    </button>
+  </div> -->
+
+
+
+
+
+
+
+
+
+          <section id="banner" class="banner">
+            <div class="container text-white text-center">
+              <div class="row">
+                <div class="col">
+                  <h1>Proyecto Integrador</h1> 
+                  <h2>Portfolio Web Full Stack</h2>
+
+
+
+                  <ul class="list-inline m-0 mt-3">
+                    <li class="list-inline-item">
+                        <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#bannerModal"><i class="fa fa-edit"></i></button>
+                    </li>
+                    <li class="list-inline-item">
+                        <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                    </li>
+                  </ul>
+
+                </div>
+              </div>  
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+          <section id="acerca" class="acerca section-padding">
+            <div class="container">
+                <div class="row">
+
+                    <div class="col-lg-4 col-md-12 col-12">
+                        <div class="about-img">
+                          <img src="assets/img/IMG-20221130-WA00162-transformed2.jpeg" alt="Foto del usuario" class="img-fluid rounded-5 my-2">
+                        </div>
+
+                        <ul class="list-inline m-0 mt-2 mb-4 text-center">
+                          <li class="list-inline-item">
+                              <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#imgPerfilModal"><i class="fa fa-edit"></i></button>
+                          </li>
+                          <li class="list-inline-item">
+                              <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                          </li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-8 col-md-12 col-12 ps-lg-5 mt-md-5">
+                        <div class="about-text text-center text-lg-start">
+                          
+                            <h2>Facundo Gabriel Gaitán Segura </h2>
+                            
+                            <h4 class="text-secondary mt-2 mb-3">Graduado en Educación Secundaria Obligatoria con Especialización Electromecánica (Full Stack Developer Jr)</h4>
+                            
+                            <p class="my-2">
+                              Estudiante de escuela técnica con especialización en electromecánica pronto a recibirme de Técnico Electromecánico. 
+                              Con avanzado nivel de inglés y dispuesto a enfrentarme a desafíos con entusiasmo para adquirir nuevos conocimientos.
+                              Me adapto fácilmente a grupos de trabajo. 
+                              Soy responsable y especialmente detallista a la hora de llevar a cabo un trabajo o proyecto, 
+                              con el objetivo de lograr el mejor resultado dentro de mis posibilidades.
+                            </p>
+                            
+
+
+                            <ul class="list-inline m-0 mt-3">
+                              <li class="list-inline-item">
+                                  <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#acercaModal"><i class="fa fa-edit"></i></button>
+                              </li>
+                              <li class="list-inline-item">
+                                  <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                              </li>
+                            </ul>
+                        </div>
+                            
+
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+          </section>
+
+
+
+
+
+
+
+
+
+          <hr>
+
+
+
+
+
+
+
+
+
+
+          <section id="experiencia" class="experiencia section-padding">
+            <div class="container">
+              <div class="row justify-content-center">
+                  <div class="col-md-12 col-lg-8">
+                      <div cLass="section-header text-center pb-5 my-2">
+                          <h2>Experiencia</h2>
+                          <p>No cuento con experiencia laboral pero me involucré en ciertos encargos para mi familia.</p>
+
+                          <p>
+                            Me involucré en la publicidad de un emprendimiento familiar de alquileres en la costa, confeccioné un folleto informativo y edité un video publicitario para publicar en redes sociales. 
+                            <br>Fui encargado con la tarea de diseñar una planilla de consorcio para el pago de las expensas dentro del edificio en el que vive un familiar.
+                            <br>De la misma forma, realicé una planilla de gastos mensuales del hogar.
+                          </p>
+                            
+
+                            <ul class="list-inline my-2 text-center">
+                              <li class="list-inline-item">
+                                  <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#experienciaModal"><i class="fa fa-edit"></i></button>
+                              </li>
+                              <li class="list-inline-item">
+                                  <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                              </li>
+                            </ul> 
+
+                      </div>
+                  </div>
+              </div>
+
+            </div>
+          </section>
+
+
+
+
+
+
+          <hr>
+
+
+
+
+
+
+
+          <section id="educacion" class="educacion section-padding">
+              <div class="container">
+                  <div class="row">
+                      <div class="col-md-12">
+                        <div class="section-header text-center pb-5 my-2">
+                            <h2>Educación</h2>
+                            <p>
+                              Actualmente estoy cursando el CBC de la UBA en la modalidad de UBA XXI. 
+                              Hice mi educación secundaria en la Escuela Técnica Henry Ford con un promedio general de 9,09 y a la par realicé certificaciones de inglés. 
+                              Comencé a aprender programación de forma autodidacta gracias a diversos tutoriales y cursos que tomé por internet, de los que destacan el CS50 y Argentina Programa.
+                            </p>
+                           
+
+
+                              <ul class="list-inline my-2 text-center">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#educacionModal"><i class="fa fa-edit"></i></button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                                </li>
+                              </ul> 
+
+
+                        </div>
+                      </div>
+                  </div>
+
+
+                  <div class="row">
+                      <div class="col-12 col-md-12 col-lg-4">
+                          <div class="card text-white text-center bg-dark pb-2 mb-2">
+                              <div class="card-body">
+                                  <img src="assets/img/logo512_f4b4cdb9e9.png" alt="ETHF" class="img-fluid mt-1 mb-2 logoETHF">
+                                  <h3 class="card-title">Escuela Técnica Henry Ford</h3>
+                                  <p class="lead mx-1">Completé los seis años de educación secundaria técnica (2017-2022) y actualmente me encuentro cursando las prácticas profesionalizantes (7º año).</p>
+                                  <a href="https://www.henryford.edu.ar" target="_blank"><button class="btn btn-warning text-dark">Más información</button></a>
+
+                                  <ul class="list-inline mt-3 mb-0 text-center">
+                                    <li class="list-inline-item">
+                                        <button class="btn btn-success btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#1educacionModal"><i class="fa fa-edit"></i></button>
+                                    </li>
+                                    <li class="list-inline-item">
+                                        <button class="btn btn-danger btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                    </li>
+                                  </ul> 
+
+
+                                </div>
+                          </div>
+                      </div>
+
+                      <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2 mb-2">
+                            <div class="card-body">
+                                <img src="assets/img/CAESEOR-1.png" alt="FCE" class="img-fluid mb-1 logoCambridge">
+                                <h3 class="card-title">Cambridge Assessment English</h3>
+                                <p class="lead mx-1">Rendí satisfactoriamente el exámen First (FCE) de Cambridge en 2021 y obtuve la certificación de un nivel de inglés B2.</p>
+                                <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#CertifFCEModal">Certificado</button>
+
+                                <ul class="list-inline mt-3 mb-0 text-center">
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-success btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#2educacionModal"><i class="fa fa-edit"></i></button>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-danger btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                  </li>
+                                </ul> 
+
+
+                              </div>
+                        </div>
+                      </div>
+
+                      <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2 mb-2">
+                            <div class="card-body">
+                                <img src="assets/img/CAESEOR-1.png" alt="CAE" class="img-fluid mb-1 logoCambridge">
+                                <h3 class="card-title">Cambridge Assessment English</h3>
+                                <p class="lead mx-1">Rendí satisfactoriamente el exámen Advanced (CAE) de Cambridge en 2022 y obtuve la certificación de un nivel de inglés C1.</p>
+                                <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#CertifCAEModal">Certificado</button>
+
+                                <ul class="list-inline mt-3 mb-0 text-center">
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-success btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#3educacionModal"><i class="fa fa-edit"></i></button>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-danger btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                  </li>
+                                </ul> 
+
+
+                              </div>
+                        </div>
+                      </div>
+
+
+
+
+
+                      <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2 mb-2">
+                            <div class="card-body">
+                                <img src="assets/img/Harvard-Logo.png" alt="CS50" class="img-fluid logoHarvard">
+                                <h3 class="card-title">CS50</h3>
+                                <p class="lead mx-1">En 2021 vi las clases en línea y realicé actividades del curso CS50, un curso introductorio de ciencias de la computación que se imparte en la Universidad de Harvard.</p>                              
+                                <a href="https://www.youtube.com/playlist?list=PLhQjrBD2T380F_inVRXMIHCqLaNUd7bN4" target="_blank"><button class="btn btn-warning text-dark">Más información</button></a>
+
+                                <ul class="list-inline mt-3 mb-0 text-center">
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-success btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#4educacionModal"><i class="fa fa-edit"></i></button>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-danger btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                  </li>
+                                </ul> 
+                              </div>
+                        </div>
+                      </div>
+
+
+
+
+                      <div class="col-12 col-md-12 col-lg-4">
+                        <div class="card text-white text-center bg-dark pb-2 mb-2">
+                            <div class="card-body">
+                                <img src="assets/img/argentina-programa-banner.png" alt="Argentina Programa" class="img-fluid ArgProg mt-3">
+                                <h3 class="card-title">#SéProgramar</h3>
+                                <p class="lead mx-1">Cursé la primera etapa del programa en 2022.</p>
+                                <button class="btn btn-warning text-dark" data-bs-toggle="modal" data-bs-target="#CertifSeProgModal">Certificado</button>
+
+                                <ul class="list-inline mt-3 mb-0 text-center">
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-success btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Edit" data-bs-toggle="modal" data-bs-target="#5educacionModal"><i class="fa fa-edit"></i></button>
+                                  </li>
+                                  <li class="list-inline-item">
+                                      <button class="btn btn-danger btn-sm rounded-4" type="button" data-toggle="tooltip" data-placement="top" title="Delete"><i class="fa fa-trash"></i></button>
+                                  </li>
+                                </ul> 
+                              </div>
+                        </div>
+                      </div>
+
+
+                  </div>
+              </div>
+          </section>
+
+
+
+
+
+
+
+
+
+          <hr>
+
+
+
+
+
+
+
+
+          <section id="skills" class="skills section-padding">
+            <div class="container">
+              <div class="row">
+                <div class="col-md-12">
+                  <div class="section-header text-center pb-3">
+                    <h2>Hard & Soft Skills</h2>
+                  </div>
+                </div>
+              </div>
+
+
+              <div id="softSkills" class="row pb-4">
+                <div class="col">
+                  <div class="section-header text-center pb-3">
+                    <h3>Soft Skills</h3>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Aprendizaje rápido</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 70%">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Paciencia</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Pensamiento analítico</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Trabajo en equipo</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="65" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 65%">65%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Atención al detalle</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Organización</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 60%">60%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Compostura</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="width: 80%">80%</div>
+                      </div>
+                    </div>
+                  </div>
+                   
+                </div>
+              </div>
+
+              <div id="hardSkills" class="row pb-4">
+                <div class="col">
+                  <div class="section-header text-center pb-3">
+                    <h3>Hard Skills</h3>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>HTML</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: orange; width: 70%">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                   
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>CSS</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: dodgerblue; width: 50%">50%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Bootstrap</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: blueviolet; width: 70%">70%</div>
+                      </div>
+                    </div>
+                  </div>
+                  
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Angular</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: crimson; width: 10%">10%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Typescript</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: blue; width: 20%">20%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Javascript</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: goldenrod; width: 10%">10%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Java</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: firebrick; width: 10%">10%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Spring Boot</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: forestgreen; width: 10%">10%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>MySQL</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="10" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: darkslategrey; width: 10%">10%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>C</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: darkslateblue; width: 30%">30%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Arduino / C++</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: cornflowerblue; width: 40%">40%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Python</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: darkgoldenrod; width: 20%">20%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>AutoCad</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="30" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: maroon; width: 30%">30%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Solid Edge</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: steelblue; width: 50%">50%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Edición de video</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: mediumseagreen; width: 40%">40%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Word</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: royalblue; width: 60%">60%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Excel</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="50" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: forestgreen; width: 50%">50%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Powerpoint</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: orangered; width: 60%">60%</div>
+                      </div>
+                    </div>
+                  </div>
+
+
+                </div>
+              </div>
+
+              <div id="idiomaSkills" class="row pb-4">
+                <div class="col">
+                  <div class="section-header text-center pb-3">
+                    <h3>Idiomas</h3>
+                  </div>
+
+                  <div class="row d-flex align-items-center">
+                    <div class="col-lg-3 col-12 text-lg-end"><h4>Inglés</h4></div>
+                    <div class="col-lg-9 col-12">
+                      <div class="progress" role="progressbar" aria-label="Animated striped example" aria-valuenow="70" aria-valuemin="0" aria-valuemax="100">
+                        <div class="progress-bar progress-bar-striped progress-bar-animated" style="background-color: darkviolet; width: 70%">70%</div>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+
+              <ul class="list-inline my-2 text-center">
+                <li class="list-inline-item">
+                    <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#skillsModal"><i class="fa fa-edit"></i></button>
+                </li>
+                <li class="list-inline-item">
+                    <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                </li>
+              </ul> 
+
+
+            </div>
+          </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <hr>
+
+
+
+
+
+
+
+
+
+
+
+
+          <section id="proyectos" class= "proyectos section-padding">
+            <div class="container">
+              <div class="row">
+                  <div class="col-md-12">
+                      <div cLass="section-header text-center pb-5">
+                          <h2>Proyectos</h2>
+                          <p>Tanto en la escuela como en los diversos cursos realicé proyectos en los que apliqué diversas tecnologías como Arduino, Python o el stack de desarrollo web.</p>
+
+
+                            <ul class="list-inline my-2 text-center">
+                              <li class="list-inline-item">
+                                  <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#proyectosModal"><i class="fa fa-edit"></i></button>
+                              </li>
+                              <li class="list-inline-item">
+                                  <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                              </li>
+                            </ul> 
+
+
+                      </div>
+                  </div>
+              </div>
+              <div class="row">
+
+                  <div class="col-12 col-md-12 col-lg-4">
+                      <div cLass="card text-center bg-white pb-2 mb-2">
+                          <div class="card-body text-dark">
+                              <div class="img-area mb-4">
+                                  <img src="assets/img/sensor.jpg" alt="Sensor de distancia" class="img-fluid">
+                              </div>
+                              <h3 class="card-title">Sensor de Distancia por Ultrasonido</h3>
+                              <p class="lead fw-normal">Proyecto realizado en grupo durante la cursada del año 2022 para la escuela. El objetivo consistía en diseñar y construir un prototipo en base a elementos de Arduino, que se encargue de realizar algún tipo de medición. Mi tarea principal fue la de programar el Arduino y ayudar al armado del circuito eléctrico.
+                                <br>Para más información, acceda a la página del proyecto en Instructables:
+                              </p>
+                              <a href="https://www.instructables.com/Medidor-De-Distancia-Con-Sensor-Ultrasónico/" target="_blank"><button class="btn bg-warning text-dark"><img class="imgInstructables" src="assets/img/instructables-logo-2023.svg" alt="Logo Instructables"></button></a>
+
+
+                              <ul class="list-inline mt-3 mb-0 text-center">
+                                <li class="list-inline-item">
+                                    <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#1proyectoModal"><i class="fa fa-edit"></i></button>
+                                </li>
+                                <li class="list-inline-item">
+                                    <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                                </li>
+                              </ul> 
+
+
+                            </div>
+                      </div>
+                  </div>
+
+                  <div class="col-12 col-md-12 col-lg-4">
+                    <div cLass="card text-center bg-white pb-2 mb-2">
+                        <div class="card-body text-dark">
+                            <div class="img-area mb-4">
+                                <img src="assets/img/Portfolio.png" alt="Sensor de distancia" class="img-fluid">
+                            </div>
+                            <h3 class="card-title">Portfolio Web Full Stack</h3>
+                            <p class="lead fw-normal">Aplicación web full stack desarrollada entre 2022 y 2023, que cumple la función de portfolio digital. Aplica una gran cantidad de tecnologías para su arquitectura distribuida y su diseño responsive.</p>
+                            <a href="" target="_blank"><button class="btn bg-warning text-dark">Acceder</button></a>
+
+
+                            <ul class="list-inline mt-3 mb-0 text-center">
+                              <li class="list-inline-item">
+                                  <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#2proyectoModal"><i class="fa fa-edit"></i></button>
+                              </li>
+                              <li class="list-inline-item">
+                                  <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                              </li>
+                            </ul> 
+
+
+                          </div>
+                    </div>
+                </div>
+
+                <div class="col-12 col-md-12 col-lg-4">
+                  <div cLass="card text-center bg-white pb-2 mb-2">
+                      <div class="card-body text-dark">
+                          <div class="img-area mb-4">
+                              <img src="assets/img/Arduino.jpg" alt="Sensor de distancia" class="img-fluid">
+                          </div>
+                          <h3 class="card-title">Actividades en Arduino</h3>
+                          <p class="lead fw-normal">Realicé diferentes prácticas con elementos de Arduino en 2022, como pueden ser un Dado Digital, una Calculadora o un Teclado. </p>
+                          <button class="btn bg-warning text-dark" data-bs-toggle="modal" data-bs-target="#arduinoModal">Código</button>
+
+
+                          <ul class="list-inline mt-3 mb-0 text-center">
+                            <li class="list-inline-item">
+                                <button class="btn btn-success btn-sm rounded-4" type="button" title="Edit" data-bs-toggle="modal" data-bs-target="#3proyectoModal"><i class="fa fa-edit"></i></button>
+                            </li>
+                            <li class="list-inline-item">
+                                <button class="btn btn-danger btn-sm rounded-4" type="button" title="Delete"><i class="fa fa-trash"></i></button>
+                            </li>
+                          </ul> 
+
+
+                        </div>
+                  </div>
+              </div>
+
+              </div>
+            </div>
+       </section>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+            <!-- Modal Login-->
+            <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="loginModalLabel">Login</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputUsuario" class="form-label">Usuario</label>
+                    <input type="text" class="form-control" id="exampleInputUsuario">
+                  </div>
+                  <div class="mb-3">
+                    <label for="exampleInputPassword1" class="form-label">Contraseña</label>
+                    <input type="password" class="form-control" id="exampleInputPassword1">
+                  </div>
+                
+              
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Iniciar Sesión</button>
+              </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- Modal Banner-->
+            <div class="modal fade" id="bannerModal" tabindex="-1" aria-labelledby="bannerModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="bannerModalLabel">Editar Banner</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputBanner" class="form-label">Imagen</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInputBannerImg"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInputBannerTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Subtítulo</label>
+                        <input type="text" class="form-control" id="exampleInputBannerSubtitle">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal img Perfil-->
+            <div class="modal fade" id="imgPerfilModal" tabindex="-1" aria-labelledby="imgPerfilModalLabel" aria-hidden="true">
+          <div class="modal-dialog">
+            <div class="modal-content">
+              <div class="modal-header">
+                <h1 class="modal-title fs-5" id="imgPerfilModalLabel">Editar Foto de Perfil</h1>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+
+                <form>
+                  <div class="mb-3">
+                    <label for="exampleInputImgPerfil" class="form-label">Editar Imagen</label>
+                    <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInputImgPerfil"  required>
+                  </div>
+                
+              <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                <button type="submit" class="btn btn-primary">Confirmar</button>
+              </div>
+              </form>
+              </div>
+            </div>
+          </div>
+          </div>
+
+            <!-- Modal Acerca-->
+            <div class="modal fade" id="acercaModal" tabindex="-1" aria-labelledby="acercaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="acercaModalLabel">Editar Acerca de...</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputNombre" class="form-label">Nombre</label>
+                        <input type="text" class="form-control" id="exampleInputNombre">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputTitulo" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInputTitulo">
+                      </div>
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInputInfo"></textarea>
+                      </div>
+                    
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Experiencia-->
+            <div class="modal fade" id="experienciaModal" tabindex="-1" aria-labelledby="experienciaModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="experienciaModalLabel">Editar Experiencia</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputExpTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInputExpTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputExpText" class="form-label">Texto</label>
+                        <textarea class="form-control" id="exampleInputExpText"></textarea>
+                      </div>
+                    
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Educación-->
+            <div class="modal fade" id="educacionModal" tabindex="-1" aria-labelledby="educacionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="educacionModalLabel">Editar Educación</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputEduTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInputEduTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputEduText" class="form-label">Texto</label>
+                        <textarea class="form-control" id="exampleInputEduText"></textarea>
+                      </div>
+                    
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Skills-->
+            <div class="modal fade" id="skillsModal" tabindex="-1" aria-labelledby="skillsModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="skillsModalLabel">Editar Skills</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputSkillsTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInputSkillsTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputSkillsText" class="form-label">Texto</label>
+                        <textarea class="form-control" id="exampleInputSkillsText"></textarea>
+                      </div>
+                    
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Proyectos-->
+            <div class="modal fade" id="proyectosModal" tabindex="-1" aria-labelledby="proyectosModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="proyectosModalLabel">Editar Proyectos</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInputProyectoTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoText" class="form-label">Texto</label>
+                        <textarea class="form-control" id="exampleInputProyectoText"></textarea>
+                      </div>
+                    
+                  
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+
+            <!-- Modal Certificado FCE-->
+            <div class="modal fade" id="CertifFCEModal" tabindex="-1" aria-labelledby="CertifFCEModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/FCE.jpg" alt="Certificado FCE" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Certificado CAE-->
+            <div class="modal fade" id="CertifCAEModal" tabindex="-1" aria-labelledby="CertifCAEModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/CAE.jpg" alt="Certificado CAE" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Certificado SéProgramar-->
+            <div class="modal fade" id="CertifSeProgModal" tabindex="-1" aria-labelledby="CertifSeProgModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-lg">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+                    <img src="assets/img/argentina_programa_2022.jpg" alt="Certificado Sé Programar" class="img-fluid">
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 1 Educación-->
+            <div class="modal fade" id="1educacionModal" tabindex="-1" aria-labelledby="1educacionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="1educacionModalLabel">Editar Apartado 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput1educacion" class="form-label">Logo</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput1educacionLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput1educacionTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput1educacionInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput1educacion" class="form-label">Certificado o Vínculo al Sitio Web</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput1educacionButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput1educacionImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput1educacionWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 2 Educación-->
+            <div class="modal fade" id="2educacionModal" tabindex="-1" aria-labelledby="2educacionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="2educacionModalLabel">Editar Apartado 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput2educacion" class="form-label">Logo</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput2educacionLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput2educacionTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput2educacionInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput2educacion" class="form-label">Certificado o Vínculo al Sitio Web</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput2educacionButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput2educacionImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput2educacionWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 3 Educación-->
+            <div class="modal fade" id="3educacionModal" tabindex="-1" aria-labelledby="3educacionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="3educacionModalLabel">Editar Apartado 3</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput3educacion" class="form-label">Logo</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput3educacionLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput3educacionTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput3educacionInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput3educacion" class="form-label">Certificado o Vínculo al Sitio Web</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput3educacionButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput3educacionImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput3educacionWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 4 Educación-->
+            <div class="modal fade" id="4educacionModal" tabindex="-1" aria-labelledby="4educacionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="4educacionModalLabel">Editar Apartado 4</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput4educacion" class="form-label">Logo</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput4educacionLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput4educacionTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput4educacionInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput4educacion" class="form-label">Certificado o Vínculo al Sitio Web</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput4educacionButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput4educacionImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput4educacionWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 5 Educación-->
+            <div class="modal fade" id="5educacionModal" tabindex="-1" aria-labelledby="5educacionModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="5educacionModalLabel">Editar Apartado 5</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput5educacion" class="form-label">Logo</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput5educacionLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput5educacionTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput5educacionInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput5educacion" class="form-label">Certificado o Vínculo al Sitio Web</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput5educacionButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput5educacionImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput5educacionWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+        
+            <!-- Modal Card 1 Proyectos-->
+            <div class="modal fade" id="1proyectoModal" tabindex="-1" aria-labelledby="1proyectoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="1proyectoModalLabel">Editar Proyecto 1</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput1proyecto" class="form-label">Imagen</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput1proyectoLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput1proyectoTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput1proyectoInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput1proyecto" class="form-label">Evidencia</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput1proyectoButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput1proyectoImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput1proyectoWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 2 Proyectos-->
+            <div class="modal fade" id="2proyectoModal" tabindex="-1" aria-labelledby="2proyectoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="2proyectoModalLabel">Editar Proyecto 2</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput2proyecto" class="form-label">Imagen</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput2proyectoLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput2proyectoTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput2proyectoInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput2proyecto" class="form-label">Evidencia</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput2proyectoButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput2proyectoImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput2proyectoWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+            <!-- Modal Card 3 Proyectos-->
+            <div class="modal fade" id="3proyectoModal" tabindex="-1" aria-labelledby="3proyectoModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="3proyectoModalLabel">Editar Proyecto 3</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+                  <div class="modal-body">
+    
+                    <form>
+                      <div class="mb-3">
+                        <label for="exampleInput3proyecto" class="form-label">Imagen</label>
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput3proyectoLogo"  required>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputProyectoTitle" class="form-label">Título</label>
+                        <input type="text" class="form-control" id="exampleInput3proyectoTitle">
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInputInfo" class="form-label">Información</label>
+                        <textarea class="form-control" id="exampleInput3proyectoInfo"></textarea>
+                      </div>
+
+                      <div class="mb-3">
+                        <label for="exampleInput3proyecto" class="form-label">Evidencia</label>
+                        <input type="text" placeholder="Inserte texto del botón" class="form-control" id="exampleInput3proyectoButton">
+                        <input type="url" placeholder="Inserte url de imagen" class="form-control" id="exampleInput3proyectoImg">
+                        <input type="url" placeholder="Inserte url del sitio web" class="form-control" id="exampleInput3proyectoWeb">
+                      </div>
+                    
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                    <button type="submit" class="btn btn-primary">Confirmar</button>
+                  </div>
+                  </form>
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+
+            <!-- Modal Proyecto Arduino-->
+            <div class="modal fade" id="arduinoModal" tabindex="-1" aria-labelledby="arduinoModalLabel" aria-hidden="true">
+              <div class="modal-dialog modal-xl">
+                <div class="modal-content">
+                  <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                  </div>
+
+                  <div class="modal-body">
+                    <div class="container text-center">
+                      <div class="row">
+                        <div class="col-12 col-md-6">
+                          <h3>Dado Digital</h3>                    
+                          <img src="assets/img/dado1.png" alt="Dado 1" class="img-fluid">
+                          <img src="assets/img/dado2.png" alt="Dado 2" class="img-fluid">
+                          <img src="assets/img/dado3.png" alt="Dado 3" class="img-fluid">
+                          <img src="assets/img/dado4.png" alt="Dado 4" class="img-fluid">
+                          <img src="assets/img/dado5.png" alt="Dado 5" class="img-fluid">
+                        </div>
+
+                        <div class="col-12 col-md-6 justify-content-center">
+                          <h3>Teclado</h3>
+                          <img src="assets/img/Tec1.png" alt="Teclado 1" class="img-fluid">
+                          <img src="assets/img/Tec2.png" alt="Teclado 2" class="img-fluid">
+                          <img src="assets/img/Tec3.png" alt="Teclado 3" class="img-fluid">
+                          <img src="assets/img/Tec4.png" alt="Teclado 4" class="img-fluid">
+                          <img src="assets/img/Tec5.png" alt="Teclado 5" class="img-fluid">
+                          <img src="assets/img/Tec6.png" alt="Teclado 6" class="img-fluid">
+                          <img src="assets/img/Tec7.png" alt="Teclado 7" class="img-fluid">
+                        </div>
+
+                      </div>
+                    </div>
+
+                  </div>
+                </div>
+              </div>
+          </div>
+
+
+        
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js" integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous"></script>
+  </body>
 </html>
